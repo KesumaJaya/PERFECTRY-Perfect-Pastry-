@@ -20,3 +20,10 @@
 <h3> 5. Event </h3>
 
 ![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/1bb2c285-37b7-4fbf-ab27-268a10bbd177)
+
+<h3> RESPONSIVE (iPhone 14 Pro Max) </h3>
+
+![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/a3a6cd22-a007-4043-90bc-52a5ec6b3934)
+
+![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/e2767e5e-b2de-46c6-876e-5aa231616c0f)
+
