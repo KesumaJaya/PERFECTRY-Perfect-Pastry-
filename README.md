@@ -1,4 +1,5 @@
-<h1> PERFECTRY-Perfect-Pastry- (ONGOING PROJECT) </h1> - sorry for improper content
+<h1> PERFECTRY-Perfect-Pastry- (ONGOING PROJECT) </h1> 
+<h3> sorry for improper content </h3>
 
 1. Login Page
 ![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/2fe584b6-8a7f-498d-a1b8-4f0fea018894)
