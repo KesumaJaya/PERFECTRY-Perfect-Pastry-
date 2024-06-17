@@ -1,4 +1,4 @@
-![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/622968df-ffd6-4e6f-a89d-40ac224c7cd1)# PERFECTRY-Perfect-Pastry-
+)# PERFECTRY-Perfect-Pastry- (ONGOING PROJECT) - sorry for improper content
 
 1. Login Page
 ![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/2fe584b6-8a7f-498d-a1b8-4f0fea018894)
