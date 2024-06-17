@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexFile/index_style.css" />
+    <title>Perfectry | Login & Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>PERFECTRY .</p>
+          <!----<img src="images/PERFECTRY.svg" alt="perfectry logo">----->
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#" class="link active" id="nav-login" onclick="login()">Sign In</a></li>
+            <li><a href="#" class="link" id="nav-register" onclick="register()">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="form-box">
+        <!------------------------ LOGIN FORM ------------------------->
+
+        <div class="login-container" id="login">
+          <div class="top">
+            <header>Welcome Baker !</header>
+          </div>
+
+          <form class="input-box" action="indexFile/user_login.php" method="post" autocomplete="off">
+
+            <input type="text" name="username" class="input-field" placeholder="Username" required><br>
+            <input type="password"  name="password" class="input-field" placeholder="Password" required><br>
+
+            <div class="frame">
+            <div class="account-type">
+              <div>
+                <input type="radio" name="user-type" id="user" value="user" checked />
+                <label for="user">User</label>
+              </div>
+              <div>
+                <input type="radio" name="user-type" id="admin" value="admin" />
+                <label for="admin">Admin</label>
+              </div>
+            </div>
+            </div>
+
+            <div class="frame">
+              <input type="submit" class="submit" name="login" value="Sign In" />
+            </div>
+          </form>
+
+          <div class="bottom">
+            <span>
+              Don't have an account? <a href="#" onclick="register()">Sign Up</a>
+            </span>
+          </div>
+        </div><br>
+
+        <!------------------------ REGISTER FORM ------------------------->
+
+        <div class="register-container" id="register">
+          <div class="top">
+            <header>Sign Up</header>
+          </div>
+
+          <form class="input-box" action="user/user_register.php" method="post" autocomplete="off">
+
+            <input type="text" name="name" class="input-field" placeholder="Your Name" required><br>
+            <input type="text" name="username" class="input-field" placeholder="Username" required><br>
+            <input type="email" name="email" class="input-field" placeholder="Email" required><br>
+            <input type="password" name="password" class="input-field" placeholder="Password" required><br>
+
+            <div class="frame">
+              <input type="submit" class="submit" name="register" value="Register" />
+            </div>
+          </form>
+
+          <div class="bottom">
+            <span>
+              Already have an account? <a href="#" onclick="login()">Login</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var a = document.getElementById("nav-login");
+  var b = document.getElementById("nav-register");
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+
+  function login() {
+    x.style.left = "4px";
+    y.style.right = "-520px";
+    a.className += " active";
+    b.className = "link";
+    x.style.opacity = 1;
+    y.style.opacity = 0;
+  }
+
+  function register() {
+    x.style.left = "-510px";
+    y.style.right = "5px";
+    a.className = "link";
+    b.className += " active";
+    x.style.opacity = 0;
+    y.style.opacity = 1;
+  }
+</script>
