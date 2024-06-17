@@ -12,10 +12,8 @@
 <h3> 4. Add Feed (Post) </h3>
 ![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/07c8f117-5d27-4ab1-b4a7-c76f99b3cefa)
 
-<h3> 5. Event </h3>
-![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/1bb2c285-37b7-4fbf-ab27-268a10bbd177)
+5. Event
+6. ![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/1bb2c285-37b7-4fbf-ab27-268a10bbd177
 
-hello
-![image](https://github.com/KesumaJaya/PERFECTRY-Perfect-Pastry-/assets/168359134/bba9c837-e2a3-4bf0-ad83-f0b0ffcd2e92)
 
 
