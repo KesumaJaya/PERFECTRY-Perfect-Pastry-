@@ -1,4 +1,4 @@
-<h1> PERFECTRY-Perfect-Pastry- (USER INTERFACE) </h1> 
+<h1> PERFECTRY - (USER INTERFACE) </h1> 
 
 <h3> 1. Login Page </h3>
 
