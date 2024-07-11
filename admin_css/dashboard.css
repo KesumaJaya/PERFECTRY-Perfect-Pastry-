@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{      
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home{
+    height: 100vh;
+}
+.home .wrapper{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+.home .wrapper .dashboard{
+    width: 200px;
+    height: 100%;
+    padding: 30px 0px;
+    position: fixed;
+    background-color: #ffb95d;
+    z-index: 100;
+}
+.home .wrapper .dashboard .image-frame{
+    width: 200px;
+    height: 200px;
+}
+.home .wrapper .dashboard .image-frame img{
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+.home .wrapper .dashboard ul{
+    padding: 0px;
+}
+.home .wrapper .dashboard ul li{
+    padding: 15px;
+    list-style: none;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+.home .wrapper .dashboard ul li a{
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+.home .wrapper .dashboard ul li:hover{
+    padding-left: 25px;
+}
+.home .wrapper .dashboard ul li a input[type=button]{
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffedd0;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    bottom: 0;
+}
+.home .wrapper .dashboard .out{
+    position: absolute;
+    padding-bottom: 20px;
+    bottom: 0;
+}
+.home .wrapper .dashboard input[type=button]{
+    margin: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffedd0;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    cursor: pointer;
+    bottom: 0;
+}
+/*-------------------------------------------------------------------*/
+
+.home .wrapper .display{
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding-left: 200px;
+}
+/*-------------------------------------------------------------------*/
+
+.home .wrapper .display .header{
+    background-color: #ffedd0;
+    border-bottom: 2px solid #ffb95d;
+    height: 85px;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+/*-------------------------------------------------------------------*/
+
+.home .wrapper .display .content-box{
+    background-color: #F6F6F6;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 10px;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 85vh;
+    overflow: auto;
+}
+/*-------------------------------------------------------------------*/
+
+
+.menu-icon{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: none;
+}  
+
+@media only screen and (max-width: 1024px) {
+    .home .wrapper .display .content-box{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 750px) {
+
+    .dashboard{
+        left: -200px;  
+        transition: 0.5s;      
+    }
+    #menu:checked ~ .dashboard{
+        left: 0px;   
+    }
+    .home .wrapper .display{
+        padding-left: 0px;
+    }
+    .home .wrapper .display .content-box{
+        margin: 10px;
+        height: 87vh;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+}

@@ -1,0 +1,96 @@
+/* Animation keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.event table{
+    width: 60vw;
+    margin: 10px 0px;
+    max-width: 900px;
+    padding: 5px;
+    border-radius: 10px;;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 10px;
+}
+.event .event-title {
+    font-size: 22px;
+    padding: 5px 0px;
+}
+.event .image-frame {
+    height: auto;
+}
+.event .image-frame img[src="../imageEvent/"] {
+    display: none;
+}
+.event table img{
+    width: 100%;
+    max-height: 480px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event table tr td input[type=submit] {
+    margin: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: #ffb95d;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    .event table{
+        padding: 5px;
+        width: 80vw;
+    }
+}
+
+/*-------------------------- JOIN EVENT ---------------------------------*/
+
+.event-detail{
+    padding: 20px;
+    width: 60vw;
+    max-width: 900px;
+    animation: fadeIn 0.4s ease-in-out; /* Apply fade-in animation */
+}
+.event-detail .image-frame {
+    width: auto;
+}
+.event-detail img{
+    width: 100%;
+    max-height: 480px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event-detail form button{
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: #ffb95d;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    .event-detail{
+        padding: 5px;
+        width: 80vw;
+    }
+}

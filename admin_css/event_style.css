@@ -1,0 +1,156 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.event table {
+    width: 60vw;
+    max-width: 900px;
+    height: 255px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.4s ease-in-out; 
+}
+.event .event-title {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+.event .image-frame {
+    height: auto;
+}
+.event img {
+    width: 100%;
+    max-height: 480px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Add Button Styles */
+.add-button {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffb95d;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.delete-button {
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #ff5d5d;
+  color: #fff;
+  transition: 0
+}
+
+.edit-button {
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background: #ffb95d;
+    color: #fff;
+    transition: 0
+}
+
+
+
+.add-event .image-frame{
+    margin: 10px 0px;
+    width: 450px;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+.add-event .image-frame img{
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.add-event .image-frame img[src=""] {
+    display: none;
+}
+.add-event input#name, input#date, input#time, input#price{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: black;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    padding: 10px 20px;
+}
+.add-event input#date, input#time, input#price{
+    width: 180px;
+}
+.add-event textarea{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 450px;
+    height: 145px;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.add-event input[type=submit]{
+    margin: 8px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffb95d;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    cursor: pointer;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 540px) {
+    
+    .add-event .image-frame{
+        width: 85vw;
+    }
+    .add-event textarea{
+        width: 85vw;
+    }
+}

@@ -1,0 +1,118 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.add-post{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-wrap: wrap;
+    animation: fadeIn 0.4s ease-in-out; 
+}
+.add-post span{
+    font-size: 13px;
+    font-weight: bold;
+}
+.add-post label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.add-post select#category{
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 5px 15px;
+    outline: none;
+}
+.add-post input#name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: black;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    padding: 10px 20px;
+}
+.add-post .image-frame{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+.add-post .image-frame img{
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.add-post .image-frame img[src=""] {
+    display: none;
+}.add-post .image-frame img[src="../imagePost/"] {
+    display: none;
+}
+.add-post input[type=button]{
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.add-post textarea{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 450px;
+    height: 145px;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.add-post input[type=submit]{
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffb95d;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    cursor: pointer;
+    bottom: 0;
+}
+.add-post input[type=reset]{
+    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ff5d5d;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+    cursor: pointer;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 540px) {
+    
+    .add-post{
+        flex-direction: column;
+        align-items: center;
+    }
+    .add-post textarea{
+        width: 75vw;
+    }
+}
+
